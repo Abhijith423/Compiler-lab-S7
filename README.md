@@ -1,1 +1,1 @@
-# Compiler-lab-S7
+# Compiler-lab-S7 KTU
