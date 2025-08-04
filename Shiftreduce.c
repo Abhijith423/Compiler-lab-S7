@@ -22,8 +22,10 @@ int main()
     printf("\nE -> E+E\nE -> E/E\nE -> E*E\nE -> a/b\n");
 
     printf("\nEnter the input symbol: ");
-    gets(ip_sym); // Unsafe, but kept as in original
-
+    
+    fgets(ip_sym, sizeof(ip_sym), stdin);
+    ip_sym[strcspn(ip_sym, "\n")] = '\0'; 
+    
     printf("\n\tStack Implementation Table");
     printf("\nStack\t\tInput Symbol\t\tAction");
     printf("\n----------------------------------------------");
