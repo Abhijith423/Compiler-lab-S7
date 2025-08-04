@@ -75,8 +75,7 @@ void check()
         stack[st_ptr + 1] = '\0';
         printf("\n$%s\t\t%s$\t\tE->%s", stack, ip_sym, temp2);
     }
-
-    // Reduce E->E+E or E*E or E/E
+    
     while (st_ptr >= 2)
     {
         temp_stack[0] = stack[st_ptr - 2];
